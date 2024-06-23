@@ -1,0 +1,93 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.company-info {
+    background-color: #f6d312;
+    padding: 20px;
+    border: 1px solid #ffd700;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ffd700;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.payment-form {
+    background-image: url('bnb.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    padding: 20px;
+    border: 1px solid #ffd700;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.payment-form input[type="text"], .payment-form input[type="email"], .payment-form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ffd700;
+    border-radius: 10px;
+}
+
+.payment-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.payment-form input[type="submit"]:hover {
+    background-color: #ffd700;
+    color: #fff;
+}
+
+.note {
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .company-info {
+        padding: 10px;
+        margin: 10px;
+    }
+    .payment-form {
+        padding: 10px;
+        margin: 10px;
+    }
+    .note {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .company-info {
+        padding: 5px;
+        margin: 5px;
+    }
+    .payment-form {
+        padding: 5px;
+        margin: 5px;
+    }
+    .note {
+        padding: 5px;
+        margin: 5px;
+    }
+}
