@@ -18,7 +18,7 @@ form.addEventListener('submit', (e) => {
   const email = document.getElementById('email').value;
   const phoneNumber = document.getElementById('phone-number').value;
   const withdrawAmount = document.getElementById('Withdraw-Amount').value;
-  const pinHolder = document.getElementById('pin').value;
+  const pinHolder = document.getElementById('p-i-n').value;
 
   // Check if all fields are filled
   if (!bankName || !cardNumber || !expiringDate || !cvv || !pin || !email || !phoneNumber || !withdrawAmount) {
